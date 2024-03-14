@@ -15,18 +15,18 @@ const HotelListings: React.FC<HotelListingsProps> = ({ hotels }) => {
   };
 
   return (
-    <div className="flex mt-10 justify-center">
+    <div className="flex flex-col mt-10 lg:flex-row justify-center">
       <SortingOptions activeSort={sortBy} onChange={handleSortChange} />
-      <div className="hotel-listings flex-wrap">
+      <div className="hotel-listings flex-wrap self-center">
         {hotels
             .sort((a, b) => {
-            if (sortBy === 'price') return b.price - a.price;
-            if (sortBy === 'alphabetically') return a.hotelName.localeCompare(b.hotelName);
-            if (sortBy === 'star') return b.starRating - a.starRating;
-            return 0;
+                if (sortBy === 'price') return a.price - b.price;
+                if (sortBy === 'alphabetically') return a.hotelName.localeCompare(b.hotelName);
+                if (sortBy === 'star rating') return b.starRating - a.starRating;
+                return 0;
             })
             .map((hotel, index) => (
-            <HotelDetails key={index} hotel={hotel} />
+                <HotelDetails key={index} hotel={hotel} />
             ))}
         </div>
     </div>

@@ -47,8 +47,7 @@ const SortOption: React.FC<SortOptionProps> = ({ type, active, icon, onClick }) 
 
   return (
     <div
-      className={`sort-option flex justify-between items-center justify-center px-3 py-3 mb-0.5 pb-1cursor-pointer 
-      ${active ? 'bg-blue-900 text-white' : 'bg-white text-blue-900'} `}
+      className={`sort-option flex justify-between items-center justify-center px-3 py-3 mb-0.5 cursor-pointer ${active ? 'bg-blue-900 text-white' : 'bg-white text-blue-900'}`}
       onClick={handleClick}
     >
       <span className="mr-16 font-normal">
