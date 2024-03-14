@@ -59,7 +59,9 @@ const HotelDetails: React.FC<HotelDetailsProps> = ({ hotel }) => {
             </p>
             <button className="w-full mt-4 flex flex-col items-center justify-self bg-yellow-400 rounded-md text-blue-800 py-2 hover:bg-yellow-500 transition ease-in">
                 <span className="font-semibold text-sm">Book Now</span>
-                <span className="text-2xl font-bold dark-blue">£{hotel.price.toLocaleString()}</span>
+                <span className="text-2xl font-bold dark-blue">
+                    £{hotel.price.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
+                </span>
             </button>
         </div>
         {expanded && (
