@@ -2,7 +2,21 @@
 
 You can preview this project without a download by using [this](https://on-the-beach-code-test.vercel.app/) link.
 
-## Getting Started on personal device
+## Building the App
+
+To build the app for yourself, you can use one of the following commands:
+
+```bash
+npm run build
+# or
+yarn build
+# or
+pnpm build
+# or
+bun build
+```
+
+You can then run one of the following commands to get started!
 
 ```bash
 npm run dev
