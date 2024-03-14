@@ -2,10 +2,10 @@ import React from 'react';
 import { HotelListing } from '../../types';
 
 interface HotelDetailsProps {
-  hotel: HotelListing;
+  hotels: HotelListing[];
 }
 
-const HotelDetails: React.FC<HotelDetailsProps> = ({ hotel }) => {
+const HotelDetails: React.FC<HotelDetailsProps> = ({ hotels }) => {
   return (
     <div>
 
