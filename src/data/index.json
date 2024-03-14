@@ -1,0 +1,48 @@
+[
+  {
+    "id": 1,
+    "hotelName": "Iberostar Grand Salome",
+    "price": 1136.50,
+    "location": "Costa Adeje, Tenerife",
+    "starRating": 5,
+    "guests": {
+      "adults": 2,
+      "children": 2,
+      "infants": 1
+    },
+    "startDate": "2019-07-03",
+    "holidayLength": "7 days",
+    "departingAirport": "East Midlands",
+    "overview": "The Iberostar Grand Salome has an exceptional location in the south of Tenerife, overlooking the Atlantic Ocean. It is situated between the Golf del Sur and the Amarillo Golf courses, and is an ideal hotel for families, couples and groups who are looking for a holiday full of sport, sun and sea."
+  },
+  {
+    "id": 2,
+    "hotelName": "Aquamarina Golf Hotel",
+    "price": 696.80,
+    "location": "Costa Adeje, Tenerife",
+    "starRating": 4,
+    "guests": {
+      "adults": 2,
+      "children": 1
+    },
+    "startDate": "2019-05-27",
+    "holidayLength": "7 days",
+    "departingAirport": "Liverpool",
+    "overview": "Overlooking the Atlantic Ocean and nestled near the prestigious Golf del Sur, Aquamarina Golf Hotel offers a serene escape for families, couples, and groups. With modern amenities and a tranquil ambiance, it's the perfect retreat for relaxation and adventure."
+  },
+  {
+    "id": 3,
+    "hotelName": "Las Piramides Resort",
+    "price": 499.99,
+    "location": "Costa Adeje, Tenerife",
+    "starRating": 3,
+    "guests": {
+      "adults": 2,
+      "children": 2
+    },
+    "startDate": "2019-07-03",
+    "holidayLength": "7 days",
+    "departingAirport": "Manchester",
+    "overview": "Located in the vibrant resort town of Tenerife, Las Piramides Resort offers easy access to the beach and surrounding attractions. With its bustling atmosphere and proximity to entertainment venues, it's an ideal destination for those seeking sun-soaked adventures and lively nightlife."
+  }
+]
