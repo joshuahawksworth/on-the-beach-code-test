@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { HotelListing } from '../../types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faStar, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import formatDate from '../../helpers/formatDate';
 
 interface HotelDetailsProps {
   hotel: HotelListing;
@@ -52,7 +53,8 @@ const HotelDetails: React.FC<HotelDetailsProps> = ({ hotel }) => {
             </div>
             <span className="text-sm  my-1" dangerouslySetInnerHTML={{ __html: formatGuests(hotel.guests) }} />
             <p className="text-sm my-1">
-                <span className="font-bold">{hotel.startDate}</span> for <span className="font-bold">{hotel.holidayLength}</span>
+                <span className="font-bold">{formatDate(hotel.startDate)}</span> for{' '}
+                <span className="font-bold">{hotel.holidayLength}</span>
             </p>
             <p className="text-sm my-1">
                 departing from <span className="font-bold">{hotel.departingAirport}</span>
