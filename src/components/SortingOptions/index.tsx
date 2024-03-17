@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSortAlphaDown, faDollarSign, faStar } from '@fortawesome/free-solid-svg-icons';
+import { faSortAlphaDown, faPoundSign, faStar } from '@fortawesome/free-solid-svg-icons';
 
 interface SortingOptionsProps {
   activeSort: string;
@@ -10,7 +10,7 @@ interface SortingOptionsProps {
 const SortingOptions: React.FC<SortingOptionsProps> = ({ activeSort, onChange }) => {
   const options = [
     { type: 'alphabetically', icon: faSortAlphaDown },
-    { type: 'price', icon: faDollarSign },
+    { type: 'price', icon: faPoundSign },
     { type: 'star rating', icon: faStar },
   ];
 
